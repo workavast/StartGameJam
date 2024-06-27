@@ -57,9 +57,11 @@ namespace StartGameJam.Scripts.PlayerData
             
             OnInit?.Invoke();
         }
-
+        
+#if UNITY_EDITOR
         [MenuItem("StartGameJam/Reset saves")]
-        static void ResetSave() 
+#endif
+        public static void ResetSave()
             => SaveAndLoader.ResetSave();
     }
 }
