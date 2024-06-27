@@ -5,7 +5,7 @@ using Zenject;
 
 namespace StartGameJam.Scripts
 {
-    public class GameContextInstaller : MonoInstaller
+    public class GameBootstrapInstaller : MonoInstaller
     {
         [SerializeField] private AudioMixer audioMixer;
         [SerializeField] private GameBootstrap gameBootstrapPrefab;
