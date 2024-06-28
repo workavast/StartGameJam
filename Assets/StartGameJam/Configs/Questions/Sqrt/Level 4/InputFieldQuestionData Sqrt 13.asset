@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e3b339f39874e409fcfce696fcab1e5, type: 3}
-  m_Name: InputFieldQuestionData
+  m_Name: InputFieldQuestionData Sqrt 13
   m_EditorClassIdentifier: 
-  <Formula>k__BackingField: 1+1
-  <Answer>k__BackingField: 2
-  <AnswerTime>k__BackingField: 4
+  <Formula>k__BackingField: "\\( \\sqrt{18 - 2} = \\)\r"
+  <Description>k__BackingField: 
+  <Answer>k__BackingField: 4
+  <AnswerTime>k__BackingField: 20

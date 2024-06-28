@@ -49,6 +49,12 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
             OnAnswering?.Invoke(fixedAnswer == _answer);
         }
 
+        public void _Skip()
+        {
+            _answerTimer.SetPause();
+            OnAnswering?.Invoke(false);
+        }
+        
         public override void Load()
         {
             var data = questionsFactory.Create();
