@@ -1,22 +1,37 @@
 ﻿using System;
+using StartGameJam.Scripts.QuestionsAndAnswers.Questions;
 using UnityEngine;
 
 namespace StartGameJam.Scripts.QuestionsAndAnswers
 {
     public class QuestionWindow : MonoBehaviour
     {
-        public event Action<bool> OnAnswering; 
+        [SerializeField] private QuestionViewBase questionView;
         
-        public void Show() 
-            => gameObject.SetActive(true);
+        public event Action<bool> OnAnswering;
 
-        public void Hide() 
-            => gameObject.SetActive(false);
+        private void Awake()
+        {
+            questionView.OnAnswering += Result;
+        }
 
-        public void _Correct() 
-            => OnAnswering?.Invoke(true);
+        public void Show()
+        {
+            gameObject.SetActive(true);
+            questionView.Load();
+        }
 
-        public void _UnCorrect() 
-            => OnAnswering?.Invoke(false);
+        public void Hide()
+        {
+            gameObject.SetActive(false);
+        }
+
+        private void Result(bool result)
+            => OnAnswering?.Invoke(result);
+
+        private void OnDestroy()
+        {
+            questionView.OnAnswering -= Result;
+        }
     }
 }

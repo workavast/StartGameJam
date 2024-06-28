@@ -10,7 +10,8 @@ namespace Avastrad.CustomTimer
         
         public bool TimerIsEnd { get; private set; }
         public bool Paused { get; private set; }
-        
+
+        public event Action OnChange;
         public event Action OnTimerEnd;
         
         public Timer(float maxTime, float startTime = 0, bool paused = false)
@@ -50,6 +51,8 @@ namespace Avastrad.CustomTimer
                     OnTimerEnd?.Invoke();
                 }
             }
+            
+            OnChange?.Invoke();
         }
 
         /// <summary>
@@ -65,6 +68,8 @@ namespace Avastrad.CustomTimer
                 TimerIsEnd = true;
                 OnTimerEnd?.Invoke();
             }
+            
+            OnChange?.Invoke();
         }
         
         public void Reset(bool paused = false)
@@ -72,6 +77,8 @@ namespace Avastrad.CustomTimer
             TimerIsEnd = false;
             CurrentTime = 0;
             Paused = paused;
+            
+            OnChange?.Invoke();
         }
         
         public void SetPause(bool paused = true) 
@@ -95,6 +102,8 @@ namespace Avastrad.CustomTimer
                 TimerIsEnd = true;
                 OnTimerEnd?.Invoke();
             }
+            
+            OnChange?.Invoke();
         }
     }
 }

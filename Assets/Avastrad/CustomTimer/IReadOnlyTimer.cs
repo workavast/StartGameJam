@@ -9,7 +9,8 @@ namespace Avastrad.CustomTimer
         
         public bool TimerIsEnd { get; }
         public bool Paused { get; }
-        
+
+        public event Action OnChange;
         public event Action OnTimerEnd;
     }
 }
