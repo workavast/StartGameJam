@@ -1,29 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-//using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     public Animator playetAnim;
-    public float acceleration = 5f;  // Ускорение по X
-    public float maxSpeed = 3f;      // Максимальная скорость по X
+    public float acceleration = 5f;  // РЈСЃРєРѕСЂРµРЅРёРµ РїРѕ X
+    public float maxSpeed = 3f;      // РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ РїРѕ X
     public bool isJumpOff = false;
-    private float jumpCooldown = 0.8f; // Время ожидания между прыжками
-    private float lastJumpTime;      // Время последнего прыжка
+    private float jumpCooldown = 0.8f; // Р’СЂРµРјСЏ РѕР¶РёРґР°РЅРёСЏ РјРµР¶РґСѓ РїСЂС‹Р¶РєР°РјРё
+    private float lastJumpTime;      // Р’СЂРµРјСЏ РїРѕСЃР»РµРґРЅРµРіРѕ РїСЂС‹Р¶РєР°
     private Rigidbody2D rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         lastJumpTime = Time.time - jumpCooldown;
     }
 
-
     void FixedUpdate()
     {
         if (!playetAnim.GetBool("isRunning"))
         {
+            Stop();
             return;
         }
 
@@ -41,11 +38,15 @@ public class PlayerMovement : MonoBehaviour
                 if (hit.collider != null && hit.collider.gameObject.CompareTag("Obstacle") && Time.time - lastJumpTime >= jumpCooldown)
                 {
                     rb.AddForce(new Vector2(0, 5f), ForceMode2D.Impulse);
-                    lastJumpTime = Time.time; // Обновляем время последнего прыжка
-                    break; // Если мы уже применили прыжок, нет смысла продолжать проверку
+                    lastJumpTime = Time.time; // РћР±РЅРѕРІР»СЏРµРј РІСЂРµРјСЏ РїРѕСЃР»РµРґРЅРµРіРѕ РїСЂС‹Р¶РєР°
+                    break; // Р•СЃР»Рё РјС‹ СѓР¶Рµ РїСЂРёРјРµРЅРёР»Рё РїСЂС‹Р¶РѕРє, РЅРµС‚ СЃРјС‹СЃР»Р° РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РїСЂРѕРІРµСЂРєСѓ
                 }
             }
         }
     }
 
+    private void Stop()
+    {
+        rb.velocity = Vector3.zero;
+    }
 }

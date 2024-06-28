@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using StartGameJam.Scripts.LevelBlocks;
-using StartGameJam.Scripts.Moving;
 using UnityEngine;
 
 namespace StartGameJam.Scripts
@@ -11,7 +10,6 @@ namespace StartGameJam.Scripts
     {
         [SerializeField] private float size;
         [SerializeField] private LevelBlocksFactory levelBlocksFactory;
-        [SerializeField] private Mover mover;
         
         public Vector2 LeftPoint => transform.position - Vector3.right * size;
         public Vector2 RightPoint => transform.position + Vector3.right * size;
@@ -33,8 +31,6 @@ namespace StartGameJam.Scripts
                 currentRightPoint = road.RightPoint;
                 _activeBlocks.Add(road);
             }
-
-            mover.OnMove += Move;
         }
 
         private void Update()
@@ -53,19 +49,6 @@ namespace StartGameJam.Scripts
             }
         }
 
-        private void OnDestroy()
-        {
-            mover.OnMove -= Move;
-        }
-
-        private void Move(float distance)
-        {
-            foreach (var block in _activeBlocks)
-            {
-                block.transform.position += Vector3.left * distance;
-            }
-        }
-        
         private void CalculatePosition(Vector2 rightPoint, LevelBlockBase levelBlockBase)
         {
             Vector2 distanceBetweenLeftPointAndCenter = levelBlockBase.transform.position - levelBlockBase.LeftPoint;

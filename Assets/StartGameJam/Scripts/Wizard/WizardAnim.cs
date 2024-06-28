@@ -1,27 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
+using StartGameJam.Scripts.Moving;
 using UnityEngine;
+using Zenject;
 
+[RequireComponent(typeof(Animator))]
 public class WizardAnim : MonoBehaviour
 {
-    private  Animator anim;
-    // Start is called before the first frame update
-
-
-    IEnumerator RunAnim()
+    [Inject] private Mover _mover;
+    
+    private Animator _anim;
+    
+    private void Start()
     {
-        yield return new WaitForSeconds(2f);
-        anim.SetBool("isRunning", true);
-    }
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-        StartCoroutine(RunAnim());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        _anim = GetComponent<Animator>();
         
+        _mover.OnContinue += StartRun;
+        _mover.OnStop += StopRun;
+        
+        if(_mover.CanMove)
+            StartRun();
     }
+
+    private void StartRun() 
+        => _anim.SetBool("isRunning", true);
+
+    private void StopRun() 
+        => _anim.SetBool("isRunning", false);
 }
