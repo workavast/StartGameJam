@@ -2,7 +2,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace StartGameJam.Scripts
+namespace StartGameJam.Scripts.Bootstraps
 {
     public class GameBootstrap : MonoBehaviour
     {

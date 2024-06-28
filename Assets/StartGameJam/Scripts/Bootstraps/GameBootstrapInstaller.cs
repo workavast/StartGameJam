@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using Zenject;
 
-namespace StartGameJam.Scripts
+namespace StartGameJam.Scripts.Bootstraps
 {
     public class GameBootstrapInstaller : MonoInstaller
     {

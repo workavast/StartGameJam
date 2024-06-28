@@ -1,5 +1,4 @@
 ﻿using StartGameJam.Scripts.PlayerData.Fps;
-using UnityEditor;
 using UnityEngine;
 
 namespace StartGameJam.Scripts
