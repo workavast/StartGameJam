@@ -3,7 +3,7 @@ using UnityEngine;
 public class TeleportChildren : MonoBehaviour
 {
     
-    // Смещение от центра камеры до границы сцены
+    // РЎРјРµС‰РµРЅРёРµ РѕС‚ С†РµРЅС‚СЂР° РєР°РјРµСЂС‹ РґРѕ РіСЂР°РЅРёС†С‹ СЃС†РµРЅС‹
     private float boundaryOffset = 18f;
     private Camera mainCamera;
 
@@ -15,38 +15,38 @@ public class TeleportChildren : MonoBehaviour
 
     void Update()
     {
-        // Определяем границы сцены на основе положения камеры
+        // РћРїСЂРµРґРµР»СЏРµРј РіСЂР°РЅРёС†С‹ СЃС†РµРЅС‹ РЅР° РѕСЃРЅРѕРІРµ РїРѕР»РѕР¶РµРЅРёСЏ РєР°РјРµСЂС‹
         float leftBoundary = mainCamera.transform.position.x - boundaryOffset;
 
-        // Получаем все дочерние объекты
+        // РџРѕР»СѓС‡Р°РµРј РІСЃРµ РґРѕС‡РµСЂРЅРёРµ РѕР±СЉРµРєС‚С‹
         Transform[] children = GetComponentsInChildren<Transform>();
 
-        // Инициализируем переменные для хранения крайнего левого и правого объектов
+        // РРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј РїРµСЂРµРјРµРЅРЅС‹Рµ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РєСЂР°Р№РЅРµРіРѕ Р»РµРІРѕРіРѕ Рё РїСЂР°РІРѕРіРѕ РѕР±СЉРµРєС‚РѕРІ
         Transform leftMost = null;
         Transform rightMost = null;
 
-        // Проходимся по всем дочерним объектам
+        // РџСЂРѕС…РѕРґРёРјСЃСЏ РїРѕ РІСЃРµРј РґРѕС‡РµСЂРЅРёРј РѕР±СЉРµРєС‚Р°Рј
         foreach (Transform child in children)
         {
-            if (child == transform) continue; // Пропускаем родительский объект
+            if (child == transform) continue; // РџСЂРѕРїСѓСЃРєР°РµРј СЂРѕРґРёС‚РµР»СЊСЃРєРёР№ РѕР±СЉРµРєС‚
 
-            // Обновляем крайний левый объект
+            // РћР±РЅРѕРІР»СЏРµРј РєСЂР°Р№РЅРёР№ Р»РµРІС‹Р№ РѕР±СЉРµРєС‚
             if (leftMost == null || child.position.x < leftMost.position.x)
             {
                 leftMost = child;
             }
 
-            // Обновляем крайний правый объект
+            // РћР±РЅРѕРІР»СЏРµРј РєСЂР°Р№РЅРёР№ РїСЂР°РІС‹Р№ РѕР±СЉРµРєС‚
             if (rightMost == null || child.position.x > rightMost.position.x)
             {
                 rightMost = child;
             }
         }
 
-        // Проверяем, если крайний левый объект вышел за пределы сцены
+        // РџСЂРѕРІРµСЂСЏРµРј, РµСЃР»Рё РєСЂР°Р№РЅРёР№ Р»РµРІС‹Р№ РѕР±СЉРµРєС‚ РІС‹С€РµР» Р·Р° РїСЂРµРґРµР»С‹ СЃС†РµРЅС‹
         if (leftMost != null && leftMost.position.x < leftBoundary)
         {
-            // Перемещаем крайний левый объект за крайний правый
+            // РџРµСЂРµРјРµС‰Р°РµРј РєСЂР°Р№РЅРёР№ Р»РµРІС‹Р№ РѕР±СЉРµРєС‚ Р·Р° РєСЂР°Р№РЅРёР№ РїСЂР°РІС‹Р№
             float width = rightMost.GetComponent<Renderer>().bounds.size.x;
             leftMost.position = new Vector3(rightMost.position.x + width, leftMost.position.y, leftMost.position.z);
         }
