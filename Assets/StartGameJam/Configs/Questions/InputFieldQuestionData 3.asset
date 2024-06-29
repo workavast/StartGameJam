@@ -20,4 +20,4 @@ MonoBehaviour:
   <AnswerTime>k__BackingField: 10
   <MinDifficulty>k__BackingField: 40
   <MaxDifficulty>k__BackingField: 50
-  <DifficultyScale>k__BackingField: 1
+  <DifficultyScale>k__BackingField: 2
