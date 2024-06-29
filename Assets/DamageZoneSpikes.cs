@@ -8,6 +8,11 @@ namespace StartGameJam.Scripts
     {
 
         private float duration = 0.7f; // длительность спуска
+        private float startY;
+        private void Start()
+        {
+            startY = transform.position.y;
+        }
         IEnumerator HideSpike()
         {
             Vector3 startPosition = transform.position;
@@ -20,7 +25,7 @@ namespace StartGameJam.Scripts
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
-            transform.position = endPosition;
+            transform.position = new Vector3(transform.position.x, startY, transform.position.z);
             gameObject.SetActive(false);
         }
 
