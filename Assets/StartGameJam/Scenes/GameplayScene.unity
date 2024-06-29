@@ -271,6 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6e71184ce44675ad3f285ca389709f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 834768121}
   useGameOver: 1
 --- !u!1 &519420028
 GameObject:
@@ -656,6 +657,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7263677950842271000, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
   m_PrefabInstance: {fileID: 834768116}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &834768121 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1240863291712837922, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+  m_PrefabInstance: {fileID: 834768116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834768118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70ddc9e727748fba8e7ecd32ac2b85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &882804913
 GameObject:
   m_ObjectHideFlags: 0

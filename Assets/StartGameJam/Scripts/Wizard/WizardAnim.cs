@@ -1,3 +1,4 @@
+using System;
 using StartGameJam.Scripts.Moving;
 using System.Collections;
 using StartGameJam.Scripts;
@@ -71,5 +72,25 @@ public class WizardAnim : MonoBehaviour
 
         if (nearestDanger != null)
             nearestDanger.DeActivate();
+    }
+
+    public event Action OnDied;
+    
+    public void InvokeDeath() 
+        => StartCoroutine(Death());
+
+    private IEnumerator Death()
+    {
+        _anim.Play("Attack");
+        
+        var curTime = 0f;
+        var deathLenght = _anim.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+        while (deathLenght > curTime)
+        {
+            yield return new WaitForEndOfFrame();
+            curTime += Time.deltaTime;
+        }
+        
+        OnDied?.Invoke();
     }
 }
