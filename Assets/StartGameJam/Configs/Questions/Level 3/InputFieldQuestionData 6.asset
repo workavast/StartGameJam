@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
   <Formula>k__BackingField: '45 : 9 + 9 * 7'
-  <Answer>k__BackingField: 29
+  <Answer>k__BackingField: 68
   <AnswerTime>k__BackingField: 10
   <MinDifficulty>k__BackingField: 10
   <MaxDifficulty>k__BackingField: 20
