@@ -21,7 +21,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
 
         private void UpdateBar()
         {
-            _bar.SetValue(questionViewWithInputField.AnswerTimer.CurrentTime / questionViewWithInputField.AnswerTimer.MaxTime);
+            _bar.SetValue(1 - questionViewWithInputField.AnswerTimer.CurrentTime / questionViewWithInputField.AnswerTimer.MaxTime);
             var curTime = questionViewWithInputField.AnswerTimer.MaxTime -
                            questionViewWithInputField.AnswerTimer.CurrentTime;
             timerText.text = Mathf.Ceil(curTime).ToString();
