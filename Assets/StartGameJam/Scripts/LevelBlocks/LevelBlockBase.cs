@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Avastrad.PoolSystem;
 using UnityEngine;
 
@@ -18,12 +20,21 @@ namespace StartGameJam.Scripts.LevelBlocks
         public event Action<LevelBlockBase> ReturnElementEvent;
         public event Action<LevelBlockBase> DestroyElementEvent;
 
+        private List<IResetable> _resetables = new();
+            
+        private void Start()
+        {
+            _resetables = GetComponentsInChildren<IResetable>().ToList();
+        }
+
         public void RemoveBlock() 
             => ReturnElementEvent?.Invoke(this);
         
         public void OnElementExtractFromPool()
         {
             gameObject.SetActive(true);
+            foreach (var resetable in _resetables) 
+                resetable.Reset();
         }
 
         public void OnElementReturnInPool()

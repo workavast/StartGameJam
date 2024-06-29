@@ -3,7 +3,7 @@ using Zenject;
 
 namespace StartGameJam.Scripts
 {
-    public class DamageZone : MonoBehaviour
+    public class DamageZone : MonoBehaviour, IResetable
     {
         [Inject] private PlayerGameData _playerGameData;
 
@@ -11,6 +11,16 @@ namespace StartGameJam.Scripts
         {
             if (other.gameObject.TryGetComponent(out IPlayer player)) 
                 _playerGameData.TakeDamage();
+        }
+
+        public virtual void DeActivate()
+        {
+            gameObject.SetActive(false);
+        }
+        
+        public virtual void Reset()
+        {
+            gameObject.SetActive(true);
         }
     }
 }
