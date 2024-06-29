@@ -36,7 +36,6 @@ public class WizardAnim : MonoBehaviour
     {
         if (!(_playerGameData.HealthPoints.CurrentValue == 0))
         {
-            print(_playerGameData.HealthPoints.CurrentValue);
             _anim.Play("Hit");
         }
     }
