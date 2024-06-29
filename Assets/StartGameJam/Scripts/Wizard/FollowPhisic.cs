@@ -2,11 +2,23 @@ using UnityEngine;
 
 public class FollowPhisic : MonoBehaviour
 {
+    [SerializeField] private bool followX = true;
+    [SerializeField] private bool followY = true;
+    
     public GameObject PhisicPl;
 
     private void FixedUpdate()
     {
-        Transform tr = PhisicPl.transform;
-        transform.position = new Vector3(tr.position.x, tr.position.y + 0.68f, transform.position.z);
+        var followedPosition = PhisicPl.transform.position;
+
+        var newPosition = transform.position;
+
+        if (followX)
+            newPosition.x = followedPosition.x;
+        
+        if (followY)
+            newPosition.y = followedPosition.y + 0.68f;
+        
+        transform.position = newPosition;
     }
 }

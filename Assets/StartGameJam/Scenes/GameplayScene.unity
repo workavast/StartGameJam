@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7ed50cd159a4c4ab0fa85b55becf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followX: 1
+  followY: 1
   PhisicPl: {fileID: 834768117}
 --- !u!114 &107607158
 MonoBehaviour:
@@ -423,6 +425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7ed50cd159a4c4ab0fa85b55becf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followX: 1
+  followY: 0
   PhisicPl: {fileID: 834768117}
 --- !u!114 &594885236 stripped
 MonoBehaviour:
