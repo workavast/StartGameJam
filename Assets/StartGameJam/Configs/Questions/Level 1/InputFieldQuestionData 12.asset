@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3b339f39874e409fcfce696fcab1e5, type: 3}
   m_Name: InputFieldQuestionData 12
   m_EditorClassIdentifier: 
-  <Formula>k__BackingField: 12 + 5
   <Description>k__BackingField: 
+  <Formula>k__BackingField: 12 + 5
   <Answer>k__BackingField: 17
   <AnswerTime>k__BackingField: 10
+  <MinDifficulty>k__BackingField: 0
+  <MaxDifficulty>k__BackingField: 10
+  <DifficultyScale>k__BackingField: 1

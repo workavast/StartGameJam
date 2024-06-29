@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 572a4ddbb2bf4b72a8d8ca112dd57b38, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: 
+  <InitialDifficulty>k__BackingField: 0
+  <MaxDifficulty>k__BackingField: 54
   <HeartsCount>k__BackingField: 3
   <TriesForAnswerCount>k__BackingField: 3
-  <QuestionsBlackListLenght>k__BackingField: 8
+  <QuestionsBlackListLenght>k__BackingField: 2
   <MoveSpeed>k__BackingField: 2

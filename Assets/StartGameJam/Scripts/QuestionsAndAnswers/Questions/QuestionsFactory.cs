@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using StartGameJam.Scripts.Core;
 using UnityEngine;
 using Zenject;
@@ -14,13 +15,21 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
 
         private readonly List<int> _blackList = new();
 
-        public InputFieldQuestionConfig Create()
+        public InputFieldQuestionConfig Create(int currentDifficulty = 10)
         {
-            int randomIndex = 0;
-            if (_gameConfig.QuestionsBlackListLenght >= questionsConfigsSet.Data.Count)
+            var possibleQuestions = questionsConfigsSet.Data.ToList();
+            for (int i = 0; i < possibleQuestions.Count; i++)
             {
-                Debug.LogError("Black list have bigger size then count of questions");
+                if(currentDifficulty < possibleQuestions[i].MinDifficulty || possibleQuestions[i].MaxDifficulty < currentDifficulty)
+                    possibleQuestions.RemoveAt(i--);
+            }
+            
+            int randomIndex = 0;
+            if (_gameConfig.QuestionsBlackListLenght >= possibleQuestions.Count)
+            {
+                Debug.LogError("Black list have bigger size then count of possible questions");
                 randomIndex = Random.Range(0, questionsConfigsSet.Data.Count);
+                return questionsConfigsSet.Data[randomIndex];
             }
             else
             {
@@ -29,7 +38,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
                 {
                     iterationsCounter++;
                     
-                    randomIndex = Random.Range(0, questionsConfigsSet.Data.Count);
+                    randomIndex = Random.Range(0, possibleQuestions.Count);
                     if(!_blackList.Contains(randomIndex))
                     {
                         _blackList.Add(randomIndex);
@@ -39,7 +48,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
                     if (iterationsCounter > 100)
                     {
                         Debug.LogError("Too much iterations");
-                        randomIndex = Random.Range(0, questionsConfigsSet.Data.Count);
+                        randomIndex = Random.Range(0, possibleQuestions.Count);
                         break;
                     }
                 }
@@ -48,7 +57,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
             if(_blackList.Count > _gameConfig.QuestionsBlackListLenght)
                 _blackList.RemoveAt(0);
             
-            return questionsConfigsSet.Data[randomIndex];
+            return possibleQuestions[randomIndex];
         }
     }
 }

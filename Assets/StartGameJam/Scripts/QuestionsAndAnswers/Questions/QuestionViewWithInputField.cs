@@ -1,6 +1,7 @@
 using System;
 using Avastrad.CustomTimer;
 using StartGameJam.Scripts.Core;
+using StartGameJam.Scripts.EventBus;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -14,10 +15,12 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         [SerializeField] private TMP_Text description;
         [SerializeField] private TMP_InputField inputField;
 
+        [Inject] private PlayerGameData _playerGameData;
         [Inject] private GameConfig _gameConfig;
-
+        [Inject] private Avastrad.EventBusFramework.EventBus _eventBus;
+        
+        private InputFieldQuestionConfig _currentQuestion;
         private readonly Timer _answerTimer = new Timer(0);
-        private string _answer;
         private int _triesCounter;
         
         public IReadOnlyTimer AnswerTimer => _answerTimer;
@@ -39,29 +42,30 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
             if(inputField.text != "")
                 _triesCounter++;
             var fixedAnswer = inputField.text.Replace(",", ".");
-            if (fixedAnswer != _answer && _triesCounter < _gameConfig.TriesForAnswerCount)
+            if (fixedAnswer != _currentQuestion.Answer && _triesCounter < _gameConfig.TriesForAnswerCount)
             {
                 Clear();
                 return;
             }
             
             _answerTimer.SetPause();
-            OnAnswering?.Invoke(fixedAnswer == _answer);
+            _eventBus.Invoke(new QuestionAnswerEvent(fixedAnswer == _currentQuestion.Answer, _currentQuestion.DifficultyScale));
+            OnAnswering?.Invoke(fixedAnswer == _currentQuestion.Answer);
         }
 
         public void _Skip()
         {
             _answerTimer.SetPause();
+            _eventBus.Invoke(new QuestionAnswerEvent(false, _currentQuestion.DifficultyScale));
             OnAnswering?.Invoke(false);
         }
         
         public override void Load()
         {
-            var data = questionsFactory.Create();
-            texDraw.text = data.Formula;
-            description.text = data.Description;
-            _answer = data.Answer;
-            _answerTimer.SetMaxTime(data.AnswerTime);
+            _currentQuestion = questionsFactory.Create(_playerGameData.Difficulty);
+            texDraw.text = _currentQuestion.Formula;
+            description.text = _currentQuestion.Description;
+            _answerTimer.SetMaxTime(_currentQuestion.AnswerTime);
             _triesCounter = 0;
             Clear();
         }
@@ -69,7 +73,8 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         private void OnAnswerTimeOver()
         {
             var fixedAnswer = inputField.text.Replace(",", ".");
-            OnAnswering?.Invoke(fixedAnswer == _answer);
+            _eventBus.Invoke(new QuestionAnswerEvent(fixedAnswer == _currentQuestion.Answer, _currentQuestion.DifficultyScale));
+            OnAnswering?.Invoke(fixedAnswer == _currentQuestion.Answer);
         }
         
         private void Clear()

@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3b339f39874e409fcfce696fcab1e5, type: 3}
   m_Name: InputFieldQuestionData Sqrt 20
   m_EditorClassIdentifier: 
-  <Formula>k__BackingField: "\\( \\sqrt[3]{8} + 1 = \\)\r"
   <Description>k__BackingField: 
+  <Formula>k__BackingField: "\\( \\sqrt[3]{8} + 1 = \\)\r"
   <Answer>k__BackingField: 3
   <AnswerTime>k__BackingField: 20
+  <MinDifficulty>k__BackingField: 40
+  <MaxDifficulty>k__BackingField: 50
+  <DifficultyScale>k__BackingField: 1

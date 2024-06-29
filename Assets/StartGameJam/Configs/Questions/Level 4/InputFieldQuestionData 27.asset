@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3b339f39874e409fcfce696fcab1e5, type: 3}
   m_Name: InputFieldQuestionData 27
   m_EditorClassIdentifier: 
-  <Formula>k__BackingField: 2 * (3^2 + 1)
   <Description>k__BackingField: 
+  <Formula>k__BackingField: 2 * (3^2 + 1)
   <Answer>k__BackingField: 20
   <AnswerTime>k__BackingField: 20
+  <MinDifficulty>k__BackingField: 15
+  <MaxDifficulty>k__BackingField: 25
+  <DifficultyScale>k__BackingField: 1

@@ -1,5 +1,4 @@
-﻿using System;
-using StartGameJam.Scripts.Moving;
+﻿using StartGameJam.Scripts.Moving;
 
 namespace StartGameJam.Scripts.QuestionsAndAnswers
 {
@@ -8,8 +7,6 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers
         private readonly QuestionWindow _questionWindow;
         private readonly Mover _mover;
         
-        public event Action<bool> OnAnswered;
-
         public QuestionAnswering(QuestionWindow questionWindow, Mover mover)
         {
             _questionWindow = questionWindow;
@@ -28,7 +25,6 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers
         public void GetQuestionResult(bool answerIsCorrect)
         {
             _questionWindow.Hide();
-            OnAnswered?.Invoke(answerIsCorrect);
             _mover.Continue(answerIsCorrect ? 1:0);
         }
     }
