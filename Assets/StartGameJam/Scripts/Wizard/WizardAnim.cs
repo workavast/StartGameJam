@@ -4,11 +4,16 @@ using StartGameJam.Scripts;
 using UnityEngine;
 using Zenject;
 
+using StartGameJam.Scripts.Core;
+
+
 [RequireComponent(typeof(Animator))]
 public class WizardAnim : MonoBehaviour
 {
     [Inject] private Mover _mover;
-    
+    [Inject] private PlayerGameData _playerGameData;
+    [Inject] private GameOverDetection _gameOverDetection;
+
     private Animator _anim;
     
     private void Start()
@@ -20,10 +25,29 @@ public class WizardAnim : MonoBehaviour
         
         if(_mover.CanMove)
             StartRun();
+
+        _playerGameData.HealthPoints.OnChange += TakeDamageAnim;
+        _gameOverDetection.OnGameOver += DeathProcess;
     }
     
     private void StartRun() 
         => _anim.SetBool("isRunning", true);
+
+    /* IEnumerator DestroyMage()
+     {
+         yield return new WaitForSeconds(0.5f);
+         Destroy(gameObject);
+     }*/
+    private void DeathProcess()
+    {
+        //_anim.Play("Death"); // NOT WORKING
+        //StartCoroutine(DestroyMage());
+        Destroy(gameObject);
+    }
+    private void TakeDamageAnim()
+    {
+        _anim.Play("Hit");
+    }
     
     private void StartRun(int action)
     {
