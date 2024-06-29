@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2403107794176087630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3484563641433558552}
+  m_Layer: 0
+  m_Name: GroundCheckPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3484563641433558552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403107794176087630}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6248220644866173893}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3261967691080372948
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057d9781775f51449b5c7b4c6f765b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieSprite: {fileID: 1107323572, guid: 586f9b668057b7947a9594cf3b7421e9, type: 3}
 --- !u!114 &811353305485950245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7ed50cd159a4c4ab0fa85b55becf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followX: 1
+  followY: 1
   PhisicPl: {fileID: 7263677950842271000}
 --- !u!1 &5574273029205000883
 GameObject:
@@ -181,7 +213,7 @@ GameObject:
   - component: {fileID: 5119393989705726482}
   - component: {fileID: 4693714570433665325}
   - component: {fileID: 1240863291712837922}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WizBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +232,8 @@ Transform:
   m_LocalPosition: {x: -7.05, y: -2.54, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 3484563641433558552}
   m_Father: {fileID: 5981677911408793557}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &7341267121466679452
@@ -281,6 +314,11 @@ MonoBehaviour:
   acceleration: 5
   maxSpeed: 3
   isJumpOff: 0
+  groundCheckPoint: {fileID: 3484563641433558552}
+  groundCheckLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  groundCheckPointSize: {x: 0.1, y: 0.1}
 --- !u!114 &1240863291712837922
 MonoBehaviour:
   m_ObjectHideFlags: 0

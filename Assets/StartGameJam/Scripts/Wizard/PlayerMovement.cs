@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -10,10 +11,19 @@ public class PlayerMovement : MonoBehaviour
     private float lastJumpTime;      // Время последнего прыжка
     private Rigidbody2D rb;
 
+    [SerializeField] private Transform groundCheckPoint;
+    [SerializeField] private LayerMask groundCheckLayers;
+    [SerializeField] private Vector2 groundCheckPointSize;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         lastJumpTime = Time.time - jumpCooldown;
+    }
+
+    private void Update()
+    {
+        CheckGround();
     }
 
     void FixedUpdate()
@@ -28,11 +38,11 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(acceleration, 0), ForceMode2D.Force);
         }
-
-        Vector2 rayStart = new Vector2(transform.position.x, transform.position.y - 0.1f);
-        RaycastHit2D[] hits = Physics2D.RaycastAll(rayStart, Vector2.right, 2f);
-        if (!isJumpOff)
+        
+        if (!isJumpOff && CheckGround())
         {
+            Vector2 rayStart = new Vector2(transform.position.x, transform.position.y - 0.1f);
+            RaycastHit2D[] hits = Physics2D.RaycastAll(rayStart, Vector2.right, 2f);
             foreach (RaycastHit2D hit in hits)
             {
                 if (hit.collider != null && hit.collider.gameObject.CompareTag("Obstacle") && Time.time - lastJumpTime >= jumpCooldown)
@@ -43,6 +53,14 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+    }
+
+    private bool CheckGround()
+    {
+        var result = Physics2D.BoxCast(groundCheckPoint.position, groundCheckPointSize, 0,
+            Vector2.down, 0, groundCheckLayers);
+
+        return result;
     }
 
     private void Stop()
