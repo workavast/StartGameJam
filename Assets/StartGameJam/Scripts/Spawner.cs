@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Avastrad.EnumValuesLibrary;
 using StartGameJam.Scripts.LevelBlocks;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace StartGameJam.Scripts
 {
@@ -15,7 +17,15 @@ namespace StartGameJam.Scripts
         public Vector2 RightPoint => transform.position + Vector3.right * size;
         
         private readonly List<LevelBlockBase> _activeBlocks = new(8);
-        
+        private readonly List<LevelBlockType> _levelBlockTypes = new();
+
+        private void Awake()
+        {
+            var types = EnumValuesTool.GetValues<LevelBlockType>();
+            foreach (var type in types) 
+                _levelBlockTypes.Add(type);
+        }
+
         private void Start()
         {
             var currentRightPoint = transform.position - Vector3.right * size;
@@ -43,7 +53,13 @@ namespace StartGameJam.Scripts
 
             if (_activeBlocks.Last().RightPoint.x <= RightPoint.x)
             {
-                var block = levelBlocksFactory.CreateRandom();
+                var possibleBlocks = _levelBlockTypes.ToList();
+                possibleBlocks.Remove(_activeBlocks.Last().PoolId);
+                
+                var randomIndex = Random.Range(0, possibleBlocks.Count);
+                var newBlockType = possibleBlocks[randomIndex];
+                
+                var block = levelBlocksFactory.Create(newBlockType);
                 CalculatePosition(_activeBlocks.Last().RightPoint, block);
                 _activeBlocks.Add(block);
             }

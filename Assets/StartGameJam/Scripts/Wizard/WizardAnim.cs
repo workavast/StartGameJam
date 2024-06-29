@@ -77,7 +77,7 @@ public class WizardAnim : MonoBehaviour
         foreach (var dangerObject in dangerObjects)
         {
             float distance = Vector3.Distance(currentPosition, dangerObject.transform.position);
-            if (distance < minDistance)
+            if (dangerObject.transform.position.x >= transform.position.x && distance < minDistance)
             {
                 minDistance = distance;
                 nearestDanger = dangerObject;
