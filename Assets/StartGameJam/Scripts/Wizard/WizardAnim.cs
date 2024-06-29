@@ -5,13 +5,17 @@ using StartGameJam.Scripts;
 using UnityEngine;
 using Zenject;
 
+using StartGameJam.Scripts.Core;
+
+
 [RequireComponent(typeof(Animator))]
 public class WizardAnim : MonoBehaviour
 {
     [Inject] private Mover _mover;
-    
+    [Inject] private PlayerGameData _playerGameData;
+
     private Animator _anim;
-    
+
     private void Start()
     {
         _anim = GetComponent<Animator>();
@@ -21,10 +25,20 @@ public class WizardAnim : MonoBehaviour
         
         if(_mover.CanMove)
             StartRun();
+
+        _playerGameData.HealthPoints.OnChange += TakeDamageAnim;
     }
     
     private void StartRun() 
         => _anim.SetBool("isRunning", true);
+
+    private void TakeDamageAnim()
+    {
+        if (!(_playerGameData.HealthPoints.CurrentValue == 0))
+        {
+            _anim.Play("Hit");
+        }
+    }
     
     private void StartRun(int action)
     {
@@ -81,8 +95,7 @@ public class WizardAnim : MonoBehaviour
 
     private IEnumerator Death()
     {
-        _anim.Play("Attack");
-        
+        _anim.Play("Death");
         var curTime = 0f;
         var deathLenght = _anim.GetCurrentAnimatorClipInfo(0)[0].clip.length;
         while (deathLenght > curTime)
@@ -90,7 +103,8 @@ public class WizardAnim : MonoBehaviour
             yield return new WaitForEndOfFrame();
             curTime += Time.deltaTime;
         }
-        
+        yield return new WaitForSeconds(0.25f);
         OnDied?.Invoke();
+        Destroy(gameObject);
     }
 }
