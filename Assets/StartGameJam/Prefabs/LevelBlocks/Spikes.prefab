@@ -58,8 +58,8 @@ Transform:
   m_GameObject: {fileID: 1370448576123600423}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.34, z: 0}
+  m_LocalScale: {x: 2, y: 1.68, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8785575215650351981}
@@ -390,8 +390,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7146318805978986389}
-  - component: {fileID: 2217910413329318966}
   - component: {fileID: 2239300627047299814}
+  - component: {fileID: 4877131194034585637}
   m_Layer: 0
   m_Name: DamageZone
   m_TagString: Danger
@@ -415,18 +415,6 @@ Transform:
   - {fileID: 2745326106444555266}
   m_Father: {fileID: 8785575215650351981}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2217910413329318966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4949460555092565780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db7874e99db54698adb174d307a1d35a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2239300627047299814
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -472,6 +460,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &4877131194034585637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4949460555092565780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0112fcb54979d428bba88af86f8d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5340400835104460056
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +529,7 @@ Transform:
   m_GameObject: {fileID: 8795245762902598715}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.58, z: 0}
+  m_LocalPosition: {x: -0.01, y: 0.802, z: 0}
   m_LocalScale: {x: 0.54, y: 0.54, z: 0.54}
   m_ConstrainProportionsScale: 1
   m_Children: []
