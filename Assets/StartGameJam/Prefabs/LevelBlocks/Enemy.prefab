@@ -233,7 +233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc4583954846415694e842bc813e0a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageZone: {fileID: 3320314794734662951}
 --- !u!1 &5095907083827309199
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +411,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7732526157067367718}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0acfaf3b8f69ecb489fdf1a8a88358f2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

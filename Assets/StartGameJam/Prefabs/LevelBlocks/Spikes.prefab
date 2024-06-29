@@ -125,7 +125,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1370448576123600423}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0acfaf3b8f69ecb489fdf1a8a88358f2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -251,7 +251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc4583954846415694e842bc813e0a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageZone: {fileID: 2217910413329318966}
 --- !u!1 &3258835333605122034
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +345,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 3258835333605122034}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0acfaf3b8f69ecb489fdf1a8a88358f2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -682,7 +681,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 8856659823612577107}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0acfaf3b8f69ecb489fdf1a8a88358f2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
