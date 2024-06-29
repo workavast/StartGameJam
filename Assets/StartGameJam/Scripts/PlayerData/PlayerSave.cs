@@ -1,6 +1,7 @@
 ﻿using System;
 using StartGameJam.Scripts.PlayerData.Audio;
 using StartGameJam.Scripts.PlayerData.Fps;
+using StartGameJam.Scripts.PlayerData.Score;
 using StartGameJam.Scripts.PlayerData.Train;
 
 namespace StartGameJam.Scripts.PlayerData
@@ -10,6 +11,7 @@ namespace StartGameJam.Scripts.PlayerData
     {
         public VolumeSettingsSave volumeSettingsSave;
         public FpsSettingsSave fpsSettingsSave;
+        public ScoreSettingsSave scoreSettingsSave;
         public TutorialSettingsSave tutorialSettingsSave;
 
         public PlayerSave()
@@ -17,20 +19,15 @@ namespace StartGameJam.Scripts.PlayerData
             volumeSettingsSave = new();
             fpsSettingsSave = new();
             tutorialSettingsSave = new();
+            scoreSettingsSave = new();
         }
         
         public PlayerSave(PlayerData playerData)
         {
             volumeSettingsSave = new VolumeSettingsSave(playerData.VolumeSettings);
             fpsSettingsSave = new FpsSettingsSave(playerData.FpsSettings);
+            scoreSettingsSave = new ScoreSettingsSave(playerData.ScoreSettings);
             tutorialSettingsSave = new TutorialSettingsSave(playerData.TutorialSettings);
-        }
-        
-        public PlayerSave(VolumeSettings volumeSettings, FpsSettings fpsSettings, TutorialSettings tutorialSettings)
-        {
-            volumeSettingsSave = new VolumeSettingsSave(volumeSettings);
-            fpsSettingsSave = new FpsSettingsSave(fpsSettings);
-            tutorialSettingsSave = new TutorialSettingsSave(tutorialSettings);
         }
     }
 }

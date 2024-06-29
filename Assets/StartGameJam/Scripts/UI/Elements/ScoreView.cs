@@ -1,3 +1,4 @@
+using StartGameJam.Scripts.ScoreCounting;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -7,7 +8,7 @@ namespace StartGameJam.Scripts.UI.Elements
     [RequireComponent(typeof(TMP_Text))]
     public class ScoreView : MonoBehaviour
     {
-        [Inject] private PlayerGameData _playerGameData;
+        [Inject] private IScoreCounter _playerGameData;
      
         private TMP_Text _tmpText;
         
@@ -26,7 +27,7 @@ namespace StartGameJam.Scripts.UI.Elements
 
         private void OnDestroy()
         {
-            _playerGameData.OnChangeDifficulty -= UpdateView;
+            _playerGameData.OnChangeScore -= UpdateView;
         }
     }
 }

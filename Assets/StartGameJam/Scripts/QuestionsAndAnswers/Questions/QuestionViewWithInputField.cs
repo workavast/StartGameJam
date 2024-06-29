@@ -49,14 +49,14 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
             }
             
             _answerTimer.SetPause();
-            _eventBus.Invoke(new QuestionAnswerEvent(fixedAnswer == _currentQuestion.Answer, _currentQuestion.DifficultyScale));
+            _eventBus.Invoke(new QuestionAnswerEvent(fixedAnswer == _currentQuestion.Answer, _currentQuestion));
             OnAnswering?.Invoke(fixedAnswer == _currentQuestion.Answer);
         }
 
         public void _Skip()
         {
             _answerTimer.SetPause();
-            _eventBus.Invoke(new QuestionAnswerEvent(false, _currentQuestion.DifficultyScale));
+            _eventBus.Invoke(new QuestionAnswerEvent(false, _currentQuestion));
             OnAnswering?.Invoke(false);
         }
         
@@ -73,7 +73,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         private void OnAnswerTimeOver()
         {
             var fixedAnswer = inputField.text.Replace(",", ".");
-            _eventBus.Invoke(new QuestionAnswerEvent(fixedAnswer == _currentQuestion.Answer, _currentQuestion.DifficultyScale));
+            _eventBus.Invoke(new QuestionAnswerEvent(fixedAnswer == _currentQuestion.Answer, _currentQuestion));
             OnAnswering?.Invoke(fixedAnswer == _currentQuestion.Answer);
         }
         

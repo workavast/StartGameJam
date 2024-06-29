@@ -12,14 +12,12 @@ namespace StartGameJam.Scripts
         private readonly GameConfig _gameConfig;
         private readonly Avastrad.EventBusFramework.EventBus _eventBus;
         private readonly IntStorage _healthPoints;
+        
         public EventBusReceiverIdentifier EventBusReceiverIdentifier { get; } = new();
-
         public int Difficulty { get; private set; }
-        public int Score { get; private set; }
         public IReadOnlyStorage<int> HealthPoints => _healthPoints; 
         
         public event Action<int> OnChangeDifficulty; 
-        public event Action<int> OnChangeScore; 
         
         public PlayerGameData(GameConfig gameConfig, Avastrad.EventBusFramework.EventBus eventBus, int initialDifficulty = 0)
         {
@@ -39,9 +37,7 @@ namespace StartGameJam.Scripts
             if (t.AnswerIsCorrect)
             {
                 Difficulty = Mathf.Clamp(Difficulty + t.QuestionDifficultyScale, 0, _gameConfig.MaxDifficulty);
-                Score += t.QuestionDifficultyScale * 10;
                 OnChangeDifficulty?.Invoke(Difficulty);
-                OnChangeScore?.Invoke(Score);
             }
         }
 

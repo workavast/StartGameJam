@@ -1,6 +1,7 @@
 using StartGameJam.Scripts.Core;
 using StartGameJam.Scripts.QuestionsAndAnswers;
 using StartGameJam.Scripts.ScenesLoading;
+using StartGameJam.Scripts.UI.Elements;
 using UnityEngine;
 using Zenject;
 
@@ -8,7 +9,7 @@ namespace StartGameJam.Scripts.UI.Screens
 {
     public class GameplayScreen : MonoBehaviour
     {
-        [SerializeField] private GameObject gameOverWindow;
+        [SerializeField] private GameOverWindow gameOverWindow;
         [SerializeField] private QuestionWindow questionWindow;
 
         private ISceneLoader _sceneLoader;
@@ -25,7 +26,7 @@ namespace StartGameJam.Scripts.UI.Screens
 
         private void Awake()
         {
-            gameOverWindow.SetActive(false);
+            gameOverWindow.Hide();
         }
 
         public void _Restart()
@@ -37,7 +38,7 @@ namespace StartGameJam.Scripts.UI.Screens
         private void OnGameOver()
         {
             questionWindow.Hide();
-            gameOverWindow.SetActive(true);
+            gameOverWindow.Show();
         }
     }
 }

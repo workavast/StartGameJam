@@ -1,6 +1,7 @@
 using System;
 using StartGameJam.Scripts.PlayerData.Audio;
 using StartGameJam.Scripts.PlayerData.Fps;
+using StartGameJam.Scripts.PlayerData.Score;
 using StartGameJam.Scripts.PlayerData.Train;
 using UnityEditor;
 using UnityEngine;
@@ -14,6 +15,7 @@ namespace StartGameJam.Scripts.PlayerData
 
         public readonly VolumeSettings VolumeSettings = new();
         public readonly FpsSettings FpsSettings = new();
+        public readonly ScoreSettings ScoreSettings = new();
         public readonly TutorialSettings TutorialSettings = new();
         private static readonly IPlayerDataSaveAndLoader SaveAndLoader = new DesktopSaveAndLoader();
         
@@ -36,6 +38,7 @@ namespace StartGameJam.Scripts.PlayerData
             
             VolumeSettings.LoadData(save.volumeSettingsSave);
             FpsSettings.LoadData(save.fpsSettingsSave);
+            ScoreSettings.LoadData(save.scoreSettingsSave);
             TutorialSettings.LoadData(save.tutorialSettingsSave);
         }
         
@@ -50,6 +53,7 @@ namespace StartGameJam.Scripts.PlayerData
             {
                 VolumeSettings, 
                 FpsSettings,
+                ScoreSettings,
                 TutorialSettings
             };
             foreach (var setting in settings)
