@@ -19,6 +19,7 @@ namespace StartGameJam.Scripts.Bootstraps
         
         private void Start()
         {
+            Time.timeScale = 1;
             _sceneLoader.Initialize(false);
             _mover.Continue();
         }

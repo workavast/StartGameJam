@@ -8,7 +8,7 @@ namespace StartGameJam.Scripts.UI.Screens
     public class MainMenuScreen : MonoBehaviour
     {
         [SerializeField] private SettingsWindow settingsWindow;
-
+        
         private ISceneLoader _sceneLoader;
         
         [Inject]
@@ -16,7 +16,7 @@ namespace StartGameJam.Scripts.UI.Screens
         {
             _sceneLoader = sceneLoader;
         }
-        
+
         private void Start()
             => _CloseSettings();
 
