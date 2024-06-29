@@ -13,7 +13,7 @@ namespace StartGameJam.Scripts.Moving
         
         public event Action<float> OnMove;
         public event Action OnStop; 
-        public event Action OnContinue; 
+        public event Action<int> OnContinue; 
         
         private void Update()
         {
@@ -30,10 +30,10 @@ namespace StartGameJam.Scripts.Moving
             OnStop?.Invoke();   
         }
 
-        public void Continue()
+        public void Continue(int action=0)
         {
             CanMove = true;
-            OnContinue?.Invoke();
+            OnContinue?.Invoke(action);
         }
     }
 }

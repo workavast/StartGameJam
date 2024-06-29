@@ -29,7 +29,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers
         {
             _questionWindow.Hide();
             OnAnswered?.Invoke(answerIsCorrect);
-            _mover.Continue();
+            _mover.Continue(answerIsCorrect ? 1:0);
         }
     }
 }
