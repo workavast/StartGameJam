@@ -318,6 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed92e486100497faff896f11aad40ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 2402745356523878851}
 --- !u!1 &5207474339287295241
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,11 +474,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1189,6 +1190,14 @@ PrefabInstance:
     - target: {fileID: 3786035134670798269, guid: 6898df9d62fbe854faae9c03fb8ac89d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5925009874724943239, guid: 6898df9d62fbe854faae9c03fb8ac89d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7702092440254185747}
+    - target: {fileID: 5925009874724943239, guid: 6898df9d62fbe854faae9c03fb8ac89d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: _LoadMainMenuScene
       objectReference: {fileID: 0}
     - target: {fileID: 7531333668347526594, guid: 6898df9d62fbe854faae9c03fb8ac89d, type: 3}
       propertyPath: m_Name
