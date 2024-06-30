@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
   <Formula>k__BackingField: \( \frac{3}{4} + \frac{1}{2} \)
-  <Answer>k__BackingField: 1,25
+  <Answer>k__BackingField: 1.25
   <AnswerTime>k__BackingField: 30
   <MinDifficulty>k__BackingField: 30
   <MaxDifficulty>k__BackingField: 40
