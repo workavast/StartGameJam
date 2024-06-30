@@ -8,6 +8,7 @@ namespace StartGameJam.Scripts
     {
         private Animator enemyAnim;
         private bool isNoDamage = false;
+        [SerializeField] private bool isNoHide = false;
 
         private void Start()
         {
@@ -32,7 +33,10 @@ namespace StartGameJam.Scripts
                 curTime += Time.deltaTime;
             }
             isNoDamage = false;
-            gameObject.SetActive(false);
+            if (!isNoHide)
+            {
+                gameObject.SetActive(false);
+            }
         }
         public override void DeActivate()
         {
