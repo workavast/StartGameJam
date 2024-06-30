@@ -128,7 +128,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 11.716797}
+  m_margin: {x: 0, y: 6.1817627, z: 0, w: 11.716797}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1303,8 +1303,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0412\u0430\u0448 \u0441\u0447\u0435\u0442:"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f127990f1aa034d4b8846f31f5b9bedf, type: 2}
+  m_sharedMaterial: {fileID: 857004621522945164, guid: f127990f1aa034d4b8846f31f5b9bedf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1328,8 +1328,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54
-  m_fontSizeBase: 54
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1512,8 +1512,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0420\u0435\u043A\u043E\u0440\u0434:"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f127990f1aa034d4b8846f31f5b9bedf, type: 2}
+  m_sharedMaterial: {fileID: 857004621522945164, guid: f127990f1aa034d4b8846f31f5b9bedf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1537,8 +1537,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54
-  m_fontSizeBase: 54
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2406,19 +2406,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6215236222858132819, guid: 8c2ef1e32d7f5c4429aceef209fb797b, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.022116425
+      value: 0.011747932
       objectReference: {fileID: 0}
     - target: {fileID: 6215236222858132819, guid: 8c2ef1e32d7f5c4429aceef209fb797b, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.5239788
+      value: 0.64665955
       objectReference: {fileID: 0}
     - target: {fileID: 6215236222858132819, guid: 8c2ef1e32d7f5c4429aceef209fb797b, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.6698113
+      value: 0.8301887
       objectReference: {fileID: 0}
     - target: {fileID: 6215236222858132819, guid: 8c2ef1e32d7f5c4429aceef209fb797b, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278617771
+      value: 4278429140
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
