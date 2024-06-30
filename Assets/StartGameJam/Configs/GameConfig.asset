@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: GameConfig
   m_EditorClassIdentifier: 
   <InitialDifficulty>k__BackingField: 0
-  <MaxDifficulty>k__BackingField: 54
+  <MaxDifficulty>k__BackingField: 49
   <HeartsCount>k__BackingField: 3
   <MoveSpeed>k__BackingField: 3
   <TriesForAnswerCount>k__BackingField: 3
-  <QuestionsBlackListLenght>k__BackingField: 2
+  <QuestionsBlackListLenght>k__BackingField: 4
   <MoveScoreStep>k__BackingField: 1.5
   <MoveScorePerStep>k__BackingField: 1
