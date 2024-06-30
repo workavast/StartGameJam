@@ -5,12 +5,11 @@ namespace StartGameJam.Scripts.Core
 {
     public class GameOverDetectionInstaller : MonoInstaller
     {
-        [SerializeField] private Player player;
-        [SerializeField] private bool useGameOver = true;
+        [SerializeField] private PlayerMovement player;
         
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<GameOverDetection>().FromNew().AsSingle().WithArguments(useGameOver, player).NonLazy();
+            Container.BindInterfacesAndSelfTo<GameOverDetection>().FromNew().AsSingle().WithArguments(player).NonLazy();
         }
     }
 }

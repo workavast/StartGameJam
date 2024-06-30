@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 6768577905865709865}
   - component: {fileID: 8814493586618536347}
   - component: {fileID: 7679511682266427589}
-  - component: {fileID: 988998252017090318}
   - component: {fileID: 811353305485950245}
   m_Layer: 0
   m_Name: WizAnim
@@ -60,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 3261967691080372948}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.8807855, y: -1.86, z: 0}
+  m_LocalPosition: {x: -6.8807855, y: -1.8600001, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -140,18 +139,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &988998252017090318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3261967691080372948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 057d9781775f51449b5c7b4c6f765b73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &811353305485950245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +199,6 @@ GameObject:
   - component: {fileID: 7341267121466679452}
   - component: {fileID: 5119393989705726482}
   - component: {fileID: 4693714570433665325}
-  - component: {fileID: 1240863291712837922}
   m_Layer: 3
   m_Name: WizBody
   m_TagString: Untagged
@@ -310,28 +296,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5f78f12701cf141bd4c6fc80dfae52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playetAnim: {fileID: 7679511682266427589}
-  acceleration: 5
-  maxSpeed: 3
-  isJumpOff: 0
+  useDeath: 1
   groundCheckPoint: {fileID: 3484563641433558552}
   groundCheckLayers:
     serializedVersion: 2
     m_Bits: 55
   groundCheckPointSize: {x: 0.1, y: 0.1}
---- !u!114 &1240863291712837922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7263677950842271000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f70ddc9e727748fba8e7ecd32ac2b85f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wizardAnim: {fileID: 988998252017090318}
+  mover: {fileID: 0}
+  playetAnim: {fileID: 7679511682266427589}
+  acceleration: 5
+  jumpCooldown: 0.8
+  lastJumpTime: 0
+  isDead: 0
 --- !u!1 &9115315786025130975
 GameObject:
   m_ObjectHideFlags: 0

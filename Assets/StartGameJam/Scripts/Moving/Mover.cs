@@ -7,23 +7,11 @@ namespace StartGameJam.Scripts.Moving
 {
     public class Mover : MonoBehaviour
     {
-        [Inject] private GameConfig _gameConfig;
-
         public bool CanMove { get; private set; }
         
-        public event Action<float> OnMove;
-        public event Action OnStop; 
-        public event Action<int> OnContinue; 
+        public event Action OnStop;
+        public event Action<int> OnContinue;
         
-        private void Update()
-        {
-            if(!CanMove)
-                return;
-            
-            var moveDistance = _gameConfig.MoveSpeed * Time.deltaTime;
-            OnMove?.Invoke(moveDistance);
-        }
-
         public void Stop()
         {
             CanMove = false;

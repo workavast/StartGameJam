@@ -273,8 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6e71184ce44675ad3f285ca389709f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 834768121}
-  useGameOver: 1
+  player: {fileID: 2111506893}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,17 +427,6 @@ MonoBehaviour:
   followX: 1
   followY: 0
   PhisicPl: {fileID: 834768117}
---- !u!114 &594885236 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 988998252017090318, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
-  m_PrefabInstance: {fileID: 834768116}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 057d9781775f51449b5c7b4c6f765b73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +561,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1240863291712837922, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+      propertyPath: wizardAnim
+      value: 
+      objectReference: {fileID: 2111506893}
+    - target: {fileID: 4693714570433665325, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+      propertyPath: mover
+      value: 
+      objectReference: {fileID: 2082591721}
+    - target: {fileID: 4693714570433665325, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 834768118}
     - target: {fileID: 5574273029205000883, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
       propertyPath: m_Name
       value: Wizard
@@ -617,6 +617,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6248220644866173893, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248220644866173893, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.76
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -627,17 +635,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9115315786025130975, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
   m_PrefabInstance: {fileID: 834768116}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &834768121 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1240863291712837922, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+--- !u!4 &834768118 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6248220644866173893, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
   m_PrefabInstance: {fileID: 834768116}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f70ddc9e727748fba8e7ecd32ac2b85f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &882804913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1118,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2111506893 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4693714570433665325, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+  m_PrefabInstance: {fileID: 834768116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5f78f12701cf141bd4c6fc80dfae52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2125722981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1204,7 @@ PrefabInstance:
     - target: {fileID: 4243182245139501713, guid: e76d2978ed3223344a0d24e7469c5aca, type: 3}
       propertyPath: playerAnim
       value: 
-      objectReference: {fileID: 594885236}
+      objectReference: {fileID: 0}
     - target: {fileID: 5072283634372211283, guid: e76d2978ed3223344a0d24e7469c5aca, type: 3}
       propertyPath: questionsFactory
       value: 
