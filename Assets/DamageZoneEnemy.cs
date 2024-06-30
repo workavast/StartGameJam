@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace StartGameJam.Scripts
@@ -18,6 +17,7 @@ namespace StartGameJam.Scripts
         {
             if (isNoDamage) return;
 
+            Play(activatedAudio);
             base.OnTriggerEnter2D(other);
             enemyAnim.Play("Attack");
         }
@@ -32,6 +32,7 @@ namespace StartGameJam.Scripts
                 yield return new WaitForEndOfFrame();
                 curTime += Time.deltaTime;
             }
+            Play(deactivatedAudio);
             isNoDamage = false;
             if (!isNoHide)
             {

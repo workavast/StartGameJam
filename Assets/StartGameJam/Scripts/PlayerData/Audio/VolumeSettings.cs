@@ -18,8 +18,8 @@ namespace StartGameJam.Scripts.PlayerData.Audio
         public VolumeSettings()
         {
             Master = 1;
-            MusicVolume = 0.5f;
-            EffectsVolume = 0.5f;
+            MusicVolume = 0.8f;
+            EffectsVolume = 0.8f;
         }
     
         public void ChangeMasterVolume(float newVolume) 

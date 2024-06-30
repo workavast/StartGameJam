@@ -6,19 +6,31 @@ namespace StartGameJam.Scripts
 {
     public class DamageZoneSpikes : DamageZone
     {
-
-        private float duration = 0.7f; // длительность спуска
+        private float duration = 0.7f; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         private float startY;
+        
         private void Start()
         {
             startY = transform.position.y;
         }
+        
+        protected override void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.TryGetComponent(out IPlayer player))
+            {
+                Play(activatedAudio);
+                _playerGameData.TakeDamage();
+            }
+        }
+        
         IEnumerator HideSpike()
         {
             Vector3 startPosition = transform.position;
             Vector3 endPosition = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
             float elapsedTime = 0f;
 
+            Play(deactivatedAudio);
+            
             while (elapsedTime < duration)
             {
                 transform.position = Vector3.Lerp(startPosition, endPosition, elapsedTime / duration);
