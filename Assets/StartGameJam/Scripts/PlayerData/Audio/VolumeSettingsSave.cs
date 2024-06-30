@@ -6,14 +6,14 @@ namespace StartGameJam.Scripts.PlayerData.Audio
     public sealed class VolumeSettingsSave
     {
         public float MasterVolume = 1f;
-        public float MusicVolume = 0.5f;
-        public float EffectsVolume = 0.5f;
+        public float MusicVolume = 0.8f;
+        public float EffectsVolume = 0.8f;
 
         public VolumeSettingsSave()
         {
             MasterVolume = 1;
-            MusicVolume = 0.5f;
-            EffectsVolume = 0.5f;
+            MusicVolume = 0.8f;
+            EffectsVolume = 0.8f;
         }
         
         public VolumeSettingsSave(VolumeSettings settings)

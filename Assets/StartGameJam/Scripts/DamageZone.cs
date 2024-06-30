@@ -1,11 +1,24 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.Serialization;
 using Zenject;
 
 namespace StartGameJam.Scripts
 {
+    [RequireComponent(typeof(AudioSource))]
     public class DamageZone : MonoBehaviour, IResetable
     {
-        [Inject] private PlayerGameData _playerGameData;
+        [FormerlySerializedAs("activated")] [SerializeField] protected GameObject activatedAudio;
+        [FormerlySerializedAs("deactivated")] [SerializeField] protected GameObject deactivatedAudio;
+        
+        [Inject] protected PlayerGameData _playerGameData;
+
+        private AudioSource _audioSource;
+        
+        private void Awake()
+        {
+            _audioSource = GetComponent<AudioSource>();
+        }
 
         protected virtual void OnTriggerEnter2D(Collider2D other)
         {
@@ -21,6 +34,11 @@ namespace StartGameJam.Scripts
         public virtual void Reset()
         {
             gameObject.SetActive(true);
+        }
+
+        protected void Play(GameObject audioClip)
+        {
+            Instantiate(audioClip);
         }
     }
 }

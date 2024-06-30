@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3b339f39874e409fcfce696fcab1e5, type: 3}
+  m_Name: InputFieldQuestionData 32
+  m_EditorClassIdentifier: 
+  <Description>k__BackingField: 
+  <Formula>k__BackingField: \( \frac{3}{4} + \frac{1}{2} \)
+  <Answer>k__BackingField: 1,25
+  <AnswerTime>k__BackingField: 30
+  <MinDifficulty>k__BackingField: 30
+  <MaxDifficulty>k__BackingField: 40
+  <DifficultyScale>k__BackingField: 2

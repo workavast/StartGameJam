@@ -57,6 +57,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
             
             _answerTimer.SetPause();
             _eventBus.Invoke(new QuestionAnswerEvent(fixedAnswer == _currentQuestion.Answer, _currentQuestion));
+            EventSystem.current.SetSelectedGameObject(null);
             OnAnswering?.Invoke(fixedAnswer == _currentQuestion.Answer);
         }
 
@@ -64,6 +65,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         {
             _answerTimer.SetPause();
             _eventBus.Invoke(new QuestionAnswerEvent(false, _currentQuestion));
+            EventSystem.current.SetSelectedGameObject(null);
             OnAnswering?.Invoke(false);
         }
         
@@ -78,13 +80,13 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
             _answerTimer.SetMaxTime(_currentQuestion.AnswerTime);
             _triesCounter = 0;
             Clear();
-            
         }
 
         private void OnAnswerTimeOver()
         {
             var fixedAnswer = inputField.text.Replace(",", ".");
             _eventBus.Invoke(new QuestionAnswerEvent(fixedAnswer == _currentQuestion.Answer, _currentQuestion));
+            EventSystem.current.SetSelectedGameObject(null);
             OnAnswering?.Invoke(fixedAnswer == _currentQuestion.Answer);
         }
         
@@ -100,7 +102,6 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
 
         private void OnDisable()
         {
-            EventSystem.current.SetSelectedGameObject(null);
             _inputDetector.OnApplyPressed -= _ApplyAnswer;
         }
     }
