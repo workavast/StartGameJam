@@ -122,6 +122,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &73848214 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4693714570433665325, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
+  m_PrefabInstance: {fileID: 834768116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5f78f12701cf141bd4c6fc80dfae52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &107607156
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,8 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6e71184ce44675ad3f285ca389709f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 834768121}
-  useGameOver: 1
+  player: {fileID: 73848214}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,17 +438,6 @@ MonoBehaviour:
   followX: 1
   followY: 0
   PhisicPl: {fileID: 834768117}
---- !u!114 &594885236 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 988998252017090318, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
-  m_PrefabInstance: {fileID: 834768116}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 057d9781775f51449b5c7b4c6f765b73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,17 +626,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9115315786025130975, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
   m_PrefabInstance: {fileID: 834768116}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &834768121 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1240863291712837922, guid: f8f7fea0ef5edf84d84474beca59aeaa, type: 3}
-  m_PrefabInstance: {fileID: 834768116}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f70ddc9e727748fba8e7ecd32ac2b85f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &882804913
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +707,7 @@ MonoBehaviour:
   - {fileID: 186625965}
   - {fileID: 338763097}
   - {fileID: 1255756158}
+  - {fileID: 2001982667}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -755,6 +744,7 @@ Transform:
   - {fileID: 186625966}
   - {fileID: 338763096}
   - {fileID: 1255756157}
+  - {fileID: 2001982668}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1255756156
@@ -1042,6 +1032,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2001982666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001982668}
+  - component: {fileID: 2001982667}
+  m_Layer: 0
+  m_Name: InputDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2001982667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001982666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d01a82f03148a79e4235ff2941c851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2001982668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001982666}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1178099269}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2043904948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,7 +1303,7 @@ PrefabInstance:
     - target: {fileID: 4243182245139501713, guid: e76d2978ed3223344a0d24e7469c5aca, type: 3}
       propertyPath: playerAnim
       value: 
-      objectReference: {fileID: 594885236}
+      objectReference: {fileID: 0}
     - target: {fileID: 5072283634372211283, guid: e76d2978ed3223344a0d24e7469c5aca, type: 3}
       propertyPath: questionsFactory
       value: 
