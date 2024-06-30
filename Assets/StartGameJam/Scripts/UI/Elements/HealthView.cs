@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Zenject;
 
@@ -14,12 +15,21 @@ namespace StartGameJam.Scripts.UI.Elements
         
         private void Start()
         {
-            var hearts = GetComponentsInChildren<Heart>();
-            int heartsCount = hearts.Length;
-            
-            for (int i = 0; i < heartsCount - _playerGameData.HealthPoints.MaxValue; i++) 
-                Destroy(hearts[i].gameObject);
+            var hearts = GetComponentsInChildren<Heart>().ToList();
+            int heartsCount = hearts.Count;
 
+            var counter = 0;
+            for (int i = 0; i < heartsCount - _playerGameData.HealthPoints.MaxValue; i++)
+            {
+                counter++;
+                Destroy(hearts[i].gameObject);
+            }
+
+            for (int i = counter-1; i >= 0; i--)
+            {
+                hearts.RemoveAt(i);
+            }            
+            
             _hearts = new List<Heart>(hearts);
             for (int i = heartsCount; i < _playerGameData.HealthPoints.MaxValue; i++)
             {
