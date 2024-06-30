@@ -267,9 +267,9 @@ MonoBehaviour:
   attack: {fileID: 8300000, guid: a008b0f402e297f43b0ae52e5c1efc18, type: 3}
   attackVolume: 1
   hit: {fileID: 8300000, guid: b121a4499845f5143b12bb1d6bea4491, type: 3}
-  hitVolume: 1
+  hitVolume: 0.25
   death: {fileID: 8300000, guid: d40bfc68041cab44699ac09a22077bea, type: 3}
-  deathVolume: 1
+  deathVolume: 0.5
 --- !u!1 &5574273029205000883
 GameObject:
   m_ObjectHideFlags: 0
