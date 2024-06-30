@@ -7,7 +7,7 @@ namespace StartGameJam.Scripts
     {
         private float duration = 0.5f; // ������������ ������
         private float startY;
-        
+        [SerializeField] private Animator blastAnim;
         private void Start()
         {
             startY = transform.position.y;
@@ -38,11 +38,29 @@ namespace StartGameJam.Scripts
             gameObject.SetActive(false);
         }
 
+        IEnumerator DeathAnim()
+        {
+            blastAnim.Play("Blast");
+            var curTime = 0f;
+            var deathLenght = blastAnim.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+            while (deathLenght > curTime)
+            {
+                yield return new WaitForEndOfFrame();
+                curTime += Time.deltaTime;
+            }
+          //  isNoDamage = false;
+           // if (!isNoHide)
+          //  {
+                gameObject.SetActive(false);
+           // }
+        }
+
         public override void DeActivate()
         {
             Play(deactivatedAudio);
-            
-            gameObject.SetActive(false);
+            // blastAnim.Play("Blast");
+            //  gameObject.SetActive(false);
+            StartCoroutine(DeathAnim());
         }
     }
 }

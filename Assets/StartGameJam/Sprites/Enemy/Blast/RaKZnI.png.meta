@@ -1,0 +1,1698 @@
+fileFormatVersion: 2
+guid: 380ef9cf12db11b48847a9cf3a34ecba
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RaKZnI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6050
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68db57049bcbf834e9643e32af1ae850
+      internalID: 1006252907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 6050
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd7ec89eee28354db5c6a0485654785
+      internalID: 1601351522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 6050
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bc149e3396d78409a0387b2e6cbf28
+      internalID: 2095392348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 6050
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c935cc95b37855e45815b5ea8e1015a5
+      internalID: -1589780482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 6050
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc123ec8034d60749ac0cbf4ac208148
+      internalID: 1699718299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 6050
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3096588732abe34c9ad671099dc225f
+      internalID: -1447880290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 6050
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d9994c2059b5f42915ee28a76eec0b
+      internalID: -37561746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5500
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a5869c9e8a7f445bdcaa35807628a3
+      internalID: 139041638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 5500
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed65250de7c460f4ab4980a69dc62d68
+      internalID: -1310265565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 5500
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc92d51ad607ee44a2cedc02fce2bc8
+      internalID: -1188333831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_10
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 5500
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4ccddf2f5c4c44fab12c7eb77b6d37
+      internalID: -1211689990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_11
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 5500
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e079f949992e8a40922818c338f46d8
+      internalID: 142379479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_12
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5500
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55394f15e4de2a84888052e8186af7a9
+      internalID: -1015539618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_13
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 5500
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498b805efcb4ea8418de3484c52b4ca2
+      internalID: 1896308778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4950
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71ac909de01ae64895cec83c92af3f0
+      internalID: 1880903479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 4950
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53fd35d52239f140ba026866952ae99
+      internalID: -645673431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4950
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac33073b40f8a3b4190954d53a8dadcd
+      internalID: 937315248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_17
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4950
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa0bf2cc2af1df4a8fdbae03c4372a3
+      internalID: -1043136672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_18
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4950
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd5fa50c4e70aa44b190c3e16f5ce48
+      internalID: 610381812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4950
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac30f1769f2a9448aa4a3ec42530d2f
+      internalID: 580716263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_20
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4950
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f428ed15cd6f643a04ba3b8afcda01
+      internalID: -1352688001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4400
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5896d967aa7c5346987c5d2e000ebf5
+      internalID: 1495699019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_22
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 4400
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23eea0116d7c7d54f90177ad41576d3c
+      internalID: 277801987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_23
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4400
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0908ccebe99e9e45bc1630e7df35290
+      internalID: -424033030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_24
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4400
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19da14d3dc2b5d1469d1fcae281722bd
+      internalID: -279789812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_25
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4400
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2e2b6f321b7e647bfd6f19b536698a
+      internalID: 2052233495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_26
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4400
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12169b64ce7f1d94a9130ab67c949810
+      internalID: -524910164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_27
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4400
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e26d009085b52449c0c06b5c2ec633
+      internalID: 2085064311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3850
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827701d041d2d7242b297b2f943ed645
+      internalID: 1912979983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_29
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3850
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dfd2cf2fc27ee4bac213aa2e49fc4e
+      internalID: 93693573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_30
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3850
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedca4110f5338c499e9a87e1662be0a
+      internalID: -771439456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_31
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3850
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b00af3c2ef049140adee942329dbb10
+      internalID: -2072254328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_32
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3850
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df24ad1f0833ce84baaa3bdb99f6e127
+      internalID: 2018217423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_33
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3850
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49a636d766d6cd4c9dc751fa7c7e9e9
+      internalID: -865018024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_34
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3850
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf113a11dcafe3458d50c0c81343be5
+      internalID: 1883853634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b309755f354384ba663bd8d5c24296
+      internalID: 1709621664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_36
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3300
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49aa4b50bfbbf5640a995095e1912491
+      internalID: 1739369641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_37
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3300
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb850bce004d4041b7dad170ee679cd
+      internalID: 556240954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3300
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a8bfaa4a482b441b9b4c3036efbdd6
+      internalID: -1154719063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_39
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3300
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21af97875878be0499fa04f7dcf03339
+      internalID: -1127390529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_40
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3300
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2caca29fe1301884fa952e7917b1f01c
+      internalID: -793976466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_41
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3300
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c028cc632c383349a0e821ad8dfa258
+      internalID: -186709382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2750
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a2ebfe641de5647ae69e73c7c8456a
+      internalID: 642017324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_43
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2750
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6a5ed7b7efe1b4fa057a0a0cda6190
+      internalID: 1437068840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2750
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2ae1377d5aabf42ad7c47f644f9b02
+      internalID: -40801958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_45
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2750
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8cf44f50c6925479356cdb6167b998
+      internalID: 230009157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_46
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2750
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b32e96b580973c4e82b6681c0ab2e14
+      internalID: -1903622329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_47
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2750
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc983818bed023e48aac1348e8f8af4c
+      internalID: 1596075273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_48
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2750
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a32d7e85baefe4eb7101ef373ef568
+      internalID: -1450256500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2200
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9c825ed35b1ac4fb33c514999f4687
+      internalID: 1177573996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2200
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b19bc2492998d64f973c8232d36feb5
+      internalID: 542339511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_51
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2200
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dfabcff280f2740826625aa80b12ae
+      internalID: 1477774902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_52
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2200
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3612dc42e0a19a04cb42a544c1d5dc17
+      internalID: -507554135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_53
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2200
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5943b5cb1349842afe01232b8247d2
+      internalID: -1438005811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_54
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2200
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28048c9339dcf4a42b867b47fccbeba8
+      internalID: -2130837548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_55
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2200
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2974d35cc9cafeb418744219fdfdb470
+      internalID: -279766100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1650
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3b04bd8d819b14088456dc195bc607
+      internalID: 937725948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_57
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1650
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc84907cbbc273e4bad2b78a6890a864
+      internalID: -233306543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_58
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1650
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dc45fc3fc93134295c0b2c24fc2a28
+      internalID: 1685704114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_59
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1650
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba846f91b80b8d4294b1f099ffe3707
+      internalID: -278444141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d807761b7add8f43ab7621ad57f0c5e
+      internalID: 1379483143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_61
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 550
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c195f601d061ea47aac291755a8c122
+      internalID: 2030289178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_62
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 550
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9b21b70f1ac0042ac34ec5ca02e6ad
+      internalID: 1498855921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_63
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 550
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f3262b407109d418d638dd5980643c
+      internalID: -1375330169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_64
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 550
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea8b8e8faeaae84ea33cbe1efdee4c2
+      internalID: 1870861684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_65
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 550
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67466765e901d64ca13b4ba1725acb9
+      internalID: -1809421746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8d49cd6202f4049a6596ca6c5443e2
+      internalID: 1796893164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_67
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16973a94b6f6ae9409ff87b5abbe174d
+      internalID: 2055834108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_68
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2545eda69890484d9c41f40ebbbc6b9
+      internalID: 1719548551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_69
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332d5fd9f38a5ec4381e6589fd189b66
+      internalID: -311605168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_70
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbbb9b43f4875c4088fdf44f2f1297c
+      internalID: -1209841894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RaKZnI_71
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 512
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89adf60f8bae3b54aaae0db0f8bbdc1c
+      internalID: 2090823469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RaKZnI_0: 1006252907
+      RaKZnI_1: 1601351522
+      RaKZnI_10: -1211689990
+      RaKZnI_11: 142379479
+      RaKZnI_12: -1015539618
+      RaKZnI_13: 1896308778
+      RaKZnI_14: 1880903479
+      RaKZnI_15: -645673431
+      RaKZnI_16: 937315248
+      RaKZnI_17: -1043136672
+      RaKZnI_18: 610381812
+      RaKZnI_19: 580716263
+      RaKZnI_2: 2095392348
+      RaKZnI_20: -1352688001
+      RaKZnI_21: 1495699019
+      RaKZnI_22: 277801987
+      RaKZnI_23: -424033030
+      RaKZnI_24: -279789812
+      RaKZnI_25: 2052233495
+      RaKZnI_26: -524910164
+      RaKZnI_27: 2085064311
+      RaKZnI_28: 1912979983
+      RaKZnI_29: 93693573
+      RaKZnI_3: -1589780482
+      RaKZnI_30: -771439456
+      RaKZnI_31: -2072254328
+      RaKZnI_32: 2018217423
+      RaKZnI_33: -865018024
+      RaKZnI_34: 1883853634
+      RaKZnI_35: 1709621664
+      RaKZnI_36: 1739369641
+      RaKZnI_37: 556240954
+      RaKZnI_38: -1154719063
+      RaKZnI_39: -1127390529
+      RaKZnI_4: 1699718299
+      RaKZnI_40: -793976466
+      RaKZnI_41: -186709382
+      RaKZnI_42: 642017324
+      RaKZnI_43: 1437068840
+      RaKZnI_44: -40801958
+      RaKZnI_45: 230009157
+      RaKZnI_46: -1903622329
+      RaKZnI_47: 1596075273
+      RaKZnI_48: -1450256500
+      RaKZnI_49: 1177573996
+      RaKZnI_5: -1447880290
+      RaKZnI_50: 542339511
+      RaKZnI_51: 1477774902
+      RaKZnI_52: -507554135
+      RaKZnI_53: -1438005811
+      RaKZnI_54: -2130837548
+      RaKZnI_55: -279766100
+      RaKZnI_56: 937725948
+      RaKZnI_57: -233306543
+      RaKZnI_58: 1685704114
+      RaKZnI_59: -278444141
+      RaKZnI_6: -37561746
+      RaKZnI_60: 1379483143
+      RaKZnI_61: 2030289178
+      RaKZnI_62: 1498855921
+      RaKZnI_63: -1375330169
+      RaKZnI_64: 1870861684
+      RaKZnI_65: -1809421746
+      RaKZnI_66: 1796893164
+      RaKZnI_67: 2055834108
+      RaKZnI_68: 1719548551
+      RaKZnI_69: -311605168
+      RaKZnI_7: 139041638
+      RaKZnI_70: -1209841894
+      RaKZnI_71: 2090823469
+      RaKZnI_8: -1310265565
+      RaKZnI_9: -1188333831
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
