@@ -7,9 +7,14 @@ namespace StartGameJam.Scripts.Core
     {
         [field: SerializeField, Min(0)] public int InitialDifficulty { get; private set; }
         [field: SerializeField, Min(0)] public int MaxDifficulty { get; private set; }
+        [field: Space]
         [field: SerializeField, Min(1)] public int HeartsCount { get; private set; } = 1;
+        [field: SerializeField, Min(0)] public float MoveSpeed { get; private set; } = 2;
+        [field: Space]
         [field: SerializeField, Min(1)] public int TriesForAnswerCount { get; private set; } = 3;
         [field: SerializeField, Min(0)] public int QuestionsBlackListLenght { get; private set; } = 3;
-        [field: SerializeField, Min(0)] public float MoveSpeed { get; private set; } = 2;
+        [field: Space]
+        [field: SerializeField, Min(0)] public float MoveScoreStep { get; private set; } = 2;
+        [field: SerializeField, Min(0)] public int MoveScorePerStep { get; private set; } = 2;
     }
 }

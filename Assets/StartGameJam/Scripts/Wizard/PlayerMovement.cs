@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour, IPlayer
     public bool isDead;
     public Action OnDied;
     public event Action OnDeathEnd;
+    public event Action<float> OnMove;
+    private Vector3 _prevPosition;
 
     private void Awake()
     {
@@ -58,6 +60,7 @@ public class PlayerMovement : MonoBehaviour, IPlayer
 
     void Start()
     {
+        _prevPosition = transform.position;
         mover.OnContinue += StartMove;
         mover.OnStop += StopMove;
 
@@ -68,9 +71,16 @@ public class PlayerMovement : MonoBehaviour, IPlayer
         else
             ChangeState(WizardState.Idle);
     }
-    
-    private void Update() 
-        => _stateMachine.ManualUpdate();
+
+    private void Update()
+    {
+        _stateMachine.ManualUpdate();
+        
+        var curPos = transform.position;
+        
+        OnMove?.Invoke(curPos.x - _prevPosition.x);
+        _prevPosition = curPos;
+    }
 
     private void FixedUpdate() 
         => _stateMachine.ManualFixedUpdate();
