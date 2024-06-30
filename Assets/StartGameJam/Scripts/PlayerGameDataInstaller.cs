@@ -6,10 +6,6 @@ namespace StartGameJam.Scripts
     {
         public override void InstallBindings()
         {
-#if !UNITY_EDITOR
-            initialDifficulty = 0;
-#endif
-            
             Container.BindInterfacesAndSelfTo<PlayerGameData>().FromNew().AsSingle().NonLazy();
         }
     }
