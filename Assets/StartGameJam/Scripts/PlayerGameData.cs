@@ -19,11 +19,11 @@ namespace StartGameJam.Scripts
         
         public event Action<int> OnChangeDifficulty; 
         
-        public PlayerGameData(GameConfig gameConfig, Avastrad.EventBusFramework.EventBus eventBus, int initialDifficulty = 0)
+        public PlayerGameData(GameConfig gameConfig, Avastrad.EventBusFramework.EventBus eventBus)
         {
             _gameConfig = gameConfig;
             _eventBus = eventBus;
-            Difficulty = Mathf.Clamp(initialDifficulty, 0, _gameConfig.MaxDifficulty);
+            Difficulty = Mathf.Clamp(_gameConfig.InitialDifficulty, 0, _gameConfig.MaxDifficulty);
             
             _eventBus.Subscribe(this);
             _healthPoints = new IntStorage(_gameConfig.HeartsCount, _gameConfig.HeartsCount);
