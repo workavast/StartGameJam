@@ -24,6 +24,7 @@ namespace StartGameJam.Scripts
 
         IEnumerator DeathAnim()
         {
+            Play(deactivatedAudio);
             enemyAnim.Play("Death");
             var curTime = 0f;
             var deathLenght = enemyAnim.GetCurrentAnimatorClipInfo(0)[0].clip.length;
@@ -32,7 +33,6 @@ namespace StartGameJam.Scripts
                 yield return new WaitForEndOfFrame();
                 curTime += Time.deltaTime;
             }
-            Play(deactivatedAudio);
             isNoDamage = false;
             if (!isNoHide)
             {
