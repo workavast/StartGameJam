@@ -13,7 +13,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         
         [Inject] private GameConfig _gameConfig;
 
-        private readonly List<int> _blackList = new();
+        private readonly List<InputFieldQuestionConfig> _blackList = new();
 
         public InputFieldQuestionConfig Create(int currentDifficulty = 10)
         {
@@ -39,9 +39,9 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
                     iterationsCounter++;
                     
                     randomIndex = Random.Range(0, possibleQuestions.Count);
-                    if(!_blackList.Contains(randomIndex))
+                    if(!_blackList.Contains(possibleQuestions[randomIndex]))
                     {
-                        _blackList.Add(randomIndex);
+                        _blackList.Add(possibleQuestions[randomIndex]);
                         break;
                     }
                     
