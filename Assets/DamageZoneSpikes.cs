@@ -18,7 +18,7 @@ namespace StartGameJam.Scripts
         {
             if (other.gameObject.TryGetComponent(out IPlayer player))
             {
-                Play(activatedAudio);
+                // Play(activatedAudio);
                 _playerGameData.TakeDamage();
             }
         }
