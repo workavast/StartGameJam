@@ -31,7 +31,8 @@ namespace StartGameJam.Scripts.UI.Elements
 
         private void OnDestroy()
         {
-            _playerGameData.OnChangeDifficulty -= UpdateView;
+            if (_playerGameData != null)
+                _playerGameData.OnChangeDifficulty -= UpdateView;
         }
     }
 }

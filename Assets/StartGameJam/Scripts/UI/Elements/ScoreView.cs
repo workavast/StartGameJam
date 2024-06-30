@@ -27,7 +27,8 @@ namespace StartGameJam.Scripts.UI.Elements
 
         private void OnDestroy()
         {
-            _playerGameData.OnChangeScore -= UpdateView;
+            if (_playerGameData != null)
+                _playerGameData.OnChangeScore -= UpdateView;
         }
     }
 }

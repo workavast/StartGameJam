@@ -43,7 +43,8 @@ namespace StartGameJam.Scripts.UI.Elements
 
         private void OnDestroy()
         {
-            _playerGameData.HealthPoints.OnChange -= UpdateHearts;
+            if (_playerGameData != null)
+                _playerGameData.HealthPoints.OnChange -= UpdateHearts;
         }
     }
 }
