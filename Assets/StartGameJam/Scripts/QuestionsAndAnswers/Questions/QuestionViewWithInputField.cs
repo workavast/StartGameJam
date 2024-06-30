@@ -2,8 +2,10 @@ using System;
 using Avastrad.CustomTimer;
 using StartGameJam.Scripts.Core;
 using StartGameJam.Scripts.EventBus;
+using StartGameJam.Scripts.InputDetection;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Zenject;
 
 namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
@@ -18,6 +20,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         [Inject] private PlayerGameData _playerGameData;
         [Inject] private GameConfig _gameConfig;
         [Inject] private Avastrad.EventBusFramework.EventBus _eventBus;
+        [Inject] private InputDetector _inputDetector;
         
         private InputFieldQuestionConfig _currentQuestion;
         private readonly Timer _answerTimer = new Timer(0);
@@ -41,9 +44,13 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         {
             if(inputField.text != "")
                 _triesCounter++;
+            
             var fixedAnswer = inputField.text.Replace(",", ".");
             if (fixedAnswer != _currentQuestion.Answer && _triesCounter < _gameConfig.TriesForAnswerCount)
             {
+                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(inputField.gameObject);
+                
                 Clear();
                 return;
             }
@@ -62,12 +69,16 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         
         public override void Load()
         {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(inputField.gameObject);
+
             _currentQuestion = questionsFactory.Create(_playerGameData.Difficulty);
             texDraw.text = _currentQuestion.Formula;
             description.text = _currentQuestion.Description;
             _answerTimer.SetMaxTime(_currentQuestion.AnswerTime);
             _triesCounter = 0;
             Clear();
+            
         }
 
         private void OnAnswerTimeOver()
@@ -80,6 +91,17 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
         private void Clear()
         {
             inputField.text = "";
+        }
+
+        private void OnEnable()
+        {
+            _inputDetector.OnApplyPressed += _ApplyAnswer;
+        }
+
+        private void OnDisable()
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+            _inputDetector.OnApplyPressed -= _ApplyAnswer;
         }
     }
 }
