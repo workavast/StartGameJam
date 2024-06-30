@@ -7,6 +7,8 @@ namespace StartGameJam.Scripts.UI.Elements
     [RequireComponent(typeof(TMP_Text))]
     public class DifficultyView : MonoBehaviour
     {
+        [SerializeField] private GameObject parent;
+        
         [Inject] private PlayerGameData _playerGameData;
      
         private TMP_Text _tmpText;
@@ -14,7 +16,7 @@ namespace StartGameJam.Scripts.UI.Elements
         private void Awake()
         {
 #if !UNITY_EDITOR
-            Destroy(gameObject);
+            Destroy(parent);
             return;
 #endif
             

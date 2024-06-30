@@ -17,8 +17,13 @@ namespace StartGameJam.Scripts.PlayerData
         public readonly FpsSettings FpsSettings = new();
         public readonly ScoreSettings ScoreSettings = new();
         public readonly TutorialSettings TutorialSettings = new();
+
+#if !UNITY_EDITOR && UNITY_WEBGL
+        private static readonly IPlayerDataSaveAndLoader SaveAndLoader = new WebSaveAndLoader();
+#else
         private static readonly IPlayerDataSaveAndLoader SaveAndLoader = new DesktopSaveAndLoader();
-        
+
+#endif
         public event Action OnInit;
 
         private PlayerData()
