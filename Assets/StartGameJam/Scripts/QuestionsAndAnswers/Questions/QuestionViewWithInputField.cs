@@ -3,6 +3,7 @@ using Avastrad.CustomTimer;
 using StartGameJam.Scripts.Core;
 using StartGameJam.Scripts.EventBus;
 using StartGameJam.Scripts.InputDetection;
+using StartGameJam.Scripts.UI.Elements;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,6 +13,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
 {
     public class QuestionViewWithInputField : QuestionViewBase
     {
+        [SerializeField] private FadeElement fadeElement;
         [SerializeField] private QuestionsFactory questionsFactory;
         [SerializeField] private TEXDraw texDraw;
         [SerializeField] private TMP_Text description;
@@ -51,6 +53,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(inputField.gameObject);
                 
+                fadeElement.Show();
                 Clear();
                 return;
             }
@@ -97,6 +100,7 @@ namespace StartGameJam.Scripts.QuestionsAndAnswers.Questions
 
         private void OnEnable()
         {
+            fadeElement.Hide();
             _inputDetector.OnApplyPressed += _ApplyAnswer;
         }
 
