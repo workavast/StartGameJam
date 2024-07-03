@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: InputFieldQuestionData 6
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
-  <Formula>k__BackingField: 45 \div 9 + 9 * 7
+  <Formula>k__BackingField: 45 \div 9 + 9 \times 7
   <Answer>k__BackingField: 68
   <AnswerTime>k__BackingField: 40
   <MinDifficulty>k__BackingField: 15

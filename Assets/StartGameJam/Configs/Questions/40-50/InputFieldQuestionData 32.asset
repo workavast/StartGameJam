@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3b339f39874e409fcfce696fcab1e5, type: 3}
   m_Name: InputFieldQuestionData 32
   m_EditorClassIdentifier: 
-  <Description>k__BackingField: "\u041D\u0430\u0439\u0442\u0438 x"
+  <Description>k__BackingField: x = ?
   <Formula>k__BackingField: \( 2x + 3 = 7 \)
   <Answer>k__BackingField: 2
   <AnswerTime>k__BackingField: 40

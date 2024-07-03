@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: InputFieldQuestionData 30
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
-  <Formula>k__BackingField: \frac{4}{8} * 2
+  <Formula>k__BackingField: \frac{4}{8} \times 2
   <Answer>k__BackingField: 1
   <AnswerTime>k__BackingField: 30
   <MinDifficulty>k__BackingField: 30

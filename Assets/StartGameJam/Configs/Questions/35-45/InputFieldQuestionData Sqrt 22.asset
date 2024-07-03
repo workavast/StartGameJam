@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: InputFieldQuestionData Sqrt 22
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
-  <Formula>k__BackingField: "\\( 2 \\times \\sqrt[3]{8} = \\)\r"
+  <Formula>k__BackingField: "\\( 2 \\times \\sqrt[3]{8}\\)\r"
   <Answer>k__BackingField: 4
   <AnswerTime>k__BackingField: 35
   <MinDifficulty>k__BackingField: 35

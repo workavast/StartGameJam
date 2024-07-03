@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: InputFieldQuestionData 2
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
-  <Formula>k__BackingField: \( 5^2 = \)
+  <Formula>k__BackingField: \( 5^2 \)
   <Answer>k__BackingField: 25
   <AnswerTime>k__BackingField: 20
   <MinDifficulty>k__BackingField: 20

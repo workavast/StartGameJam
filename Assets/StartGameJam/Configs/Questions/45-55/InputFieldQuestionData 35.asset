@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3b339f39874e409fcfce696fcab1e5, type: 3}
   m_Name: InputFieldQuestionData 35
   m_EditorClassIdentifier: 
-  <Description>k__BackingField: '
-
-'
+  <Description>k__BackingField: z = ?
   <Formula>k__BackingField: \( \frac{5}{8} = \frac{15}{z} \)
   <Answer>k__BackingField: 24
   <AnswerTime>k__BackingField: 20

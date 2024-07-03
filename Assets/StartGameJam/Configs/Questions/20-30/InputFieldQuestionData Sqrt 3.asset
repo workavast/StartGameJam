@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: InputFieldQuestionData Sqrt 3
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
-  <Formula>k__BackingField: "\\( \\sqrt{25} = \\)\r"
+  <Formula>k__BackingField: "\\( \\sqrt{25} \\)\r"
   <Answer>k__BackingField: 5
   <AnswerTime>k__BackingField: 20
   <MinDifficulty>k__BackingField: 20

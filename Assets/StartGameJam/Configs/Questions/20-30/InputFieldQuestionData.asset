@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: InputFieldQuestionData
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
-  <Formula>k__BackingField: \( 4^3 = \)
+  <Formula>k__BackingField: \( 4^3 \)
   <Answer>k__BackingField: 64
   <AnswerTime>k__BackingField: 20
   <MinDifficulty>k__BackingField: 20
