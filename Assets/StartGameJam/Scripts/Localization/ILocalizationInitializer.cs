@@ -1,4 +1,4 @@
-namespace StartGameJam.Scripts.Bootstraps.Loc
+namespace StartGameJam.Scripts.Localization
 {
     public interface ILocalizationInitializer
     {

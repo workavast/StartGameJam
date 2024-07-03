@@ -2,11 +2,11 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 
-namespace StartGameJam.Scripts.Bootstraps.Loc
+namespace StartGameJam.Scripts.Localization
 {
     public class LocalizationInitializer
     {
-        private readonly ILocalizationInitializer _localizationInitializer = new AndroidLocalizationInitializer();
+        private readonly ILocalizationInitializer _localizationInitializer = new WebLocalizationInitializer();
         
         public async Task InitLocalizationSettings()
         {

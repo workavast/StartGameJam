@@ -1,4 +1,4 @@
-using StartGameJam.Scripts.Bootstraps.Loc;
+using StartGameJam.Scripts.Localization;
 using StartGameJam.Scripts.ScenesLoading;
 using UnityEngine;
 using Zenject;

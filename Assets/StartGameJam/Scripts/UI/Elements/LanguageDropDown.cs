@@ -1,11 +1,11 @@
-﻿using StartGameJam.Scripts.Bootstraps.Loc;
+﻿using StartGameJam.Scripts.Localization;
 using TMPro;
 using UnityEngine;
 using Zenject;
 
 namespace StartGameJam.Scripts.UI.Elements
 {
-    public class LonguageDropDown : MonoBehaviour
+    public class LocalizationDropDown : MonoBehaviour
     {
         [SerializeField] private TMP_Dropdown dropdown;
 
@@ -13,7 +13,7 @@ namespace StartGameJam.Scripts.UI.Elements
         
         private void Start()
         {
-            dropdown.SetValueWithoutNotify(Init(_localizationChanger.LocalizationIndex));
+            dropdown.SetValueWithoutNotify(Init(LocalizationChanger.LocalizationIndex));
             dropdown.onValueChanged.AddListener(UpdateFpsCap);
         }
         

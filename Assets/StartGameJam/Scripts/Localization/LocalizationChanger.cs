@@ -2,11 +2,11 @@
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 
-namespace StartGameJam.Scripts.Bootstraps.Loc
+namespace StartGameJam.Scripts.Localization
 {
     public class LocalizationChanger
     {
-        public int LocalizationIndex => PlayerData.PlayerData.Instance.LocalizationSettings.LocalizationId;
+        public static int LocalizationIndex => PlayerData.PlayerData.Instance.LocalizationSettings.LocalizationId;
         
         private bool _active;
         

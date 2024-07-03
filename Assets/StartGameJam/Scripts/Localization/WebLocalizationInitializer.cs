@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace StartGameJam.Scripts.Bootstraps.Loc
+namespace StartGameJam.Scripts.Localization
 {
-    public class AndroidLocalizationInitializer : ILocalizationInitializer
+    public class WebLocalizationInitializer : ILocalizationInitializer
     {
         public int GetLocalization()
         {
