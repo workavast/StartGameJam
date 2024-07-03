@@ -7,9 +7,11 @@ namespace StartGameJam.Scripts.ScenesLoading
     public class SceneLoader : ISceneLoader
     {
         public int LoadingSceneIndex => LOADING_SCENE_INDEX;
+        public int BootstrapSceneIndex => BOOTSTRAP_SCENE_INDEX;
         
         private const int LOADING_SCENE_INDEX = 1;
-        private static int _targetSceneIndex = -1;
+        private const int BOOTSTRAP_SCENE_INDEX = 3;
+        private int _targetSceneIndex = -1;
         private readonly ILoadingScreen _loadingScreen;
         
         public event Action LoadingStarted;
@@ -24,6 +26,9 @@ namespace StartGameJam.Scripts.ScenesLoading
         {
             var activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
             
+            if(activeSceneIndex == BootstrapSceneIndex)
+                return;
+                
             if (_targetSceneIndex <= -1 || activeSceneIndex == _targetSceneIndex)
                 EndLoading(endInstantly);
 
@@ -49,7 +54,7 @@ namespace StartGameJam.Scripts.ScenesLoading
                 _loadingScreen.EndLoading();
         }
         
-        private static void StartLoadTargetScene() 
+        private void StartLoadTargetScene() 
             => SceneManager.LoadSceneAsync(_targetSceneIndex);
     }
 }

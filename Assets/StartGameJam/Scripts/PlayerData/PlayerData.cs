@@ -1,6 +1,7 @@
 using System;
 using StartGameJam.Scripts.PlayerData.Audio;
 using StartGameJam.Scripts.PlayerData.Fps;
+using StartGameJam.Scripts.PlayerData.Localization;
 using StartGameJam.Scripts.PlayerData.Score;
 using StartGameJam.Scripts.PlayerData.Train;
 using UnityEditor;
@@ -13,6 +14,7 @@ namespace StartGameJam.Scripts.PlayerData
         private static PlayerData _instance;
         public static PlayerData Instance => _instance ??= new PlayerData();
 
+        public readonly LocalizationSettings LocalizationSettings = new();
         public readonly VolumeSettings VolumeSettings = new();
         public readonly FpsSettings FpsSettings = new();
         public readonly ScoreSettings ScoreSettings = new();
@@ -41,6 +43,7 @@ namespace StartGameJam.Scripts.PlayerData
         {
             var save = SaveAndLoader.Load();
             
+            LocalizationSettings.LoadData(save.localizationSettingsSave);
             VolumeSettings.LoadData(save.volumeSettingsSave);
             FpsSettings.LoadData(save.fpsSettingsSave);
             ScoreSettings.LoadData(save.scoreSettingsSave);
@@ -56,6 +59,7 @@ namespace StartGameJam.Scripts.PlayerData
             
             ISettings[] settings =
             {
+                LocalizationSettings,
                 VolumeSettings, 
                 FpsSettings,
                 ScoreSettings,
